@@ -1,0 +1,45 @@
+<meta charset = "UTF-8">
+
+<h1>JUEGO DE ADIVINANZAS REPLICA</h1>
+
+<script>
+
+	function saltarLinea() {
+
+		document.write("<br>");
+		document.write("<hr>");
+		document.write("<br>");
+	}
+
+	function imprimir(frase) {
+		document.write("<big>" + frase + "</big>");
+		saltarLinea();
+	}
+
+	var intentos = 3;
+	var numeroPensado = Math.round(Math.random() * 10);
+	var numeroLanzado;
+	var contador = 1;
+
+	while(contador <= intentos) {
+		numeroLanzado = parseInt(prompt("Elija un numero entre 0 - 10"));
+		if(numeroPensado == numeroLanzado) {
+			alert("Usted acerto " + numeroLanzado + ", as ganado en el juego de adivinanzas, en el intento " + contador + " el numero pensado es " + numeroPensado);
+			break;
+		}
+		else {
+			alert("Usted erro, le quedan " + (intentos - contador) + " intenos mas");
+		}
+		contador++;
+	}
+
+	if(numeroPensado == numeroLanzado) {
+		imprimir("Usted acerto " + numeroLanzado + ", as ganado en el juego de adivinanzas, en el intento " + contador + " el numero pensado es " + numeroPensado);
+	}
+	else {
+		imprimir("Usted erro, el numero pensado era " + numeroPensado + " mejor suerte la proxima");
+	}
+
+	imprimir("FIN");
+
+</script>
