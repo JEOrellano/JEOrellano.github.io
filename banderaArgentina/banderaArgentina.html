@@ -1,0 +1,49 @@
+<canvas width="600" height="400"></canvas>
+
+<script>
+	var pantalla = document.querySelector("canvas");
+	var pincel = pantalla.getContext("2d");
+
+	pincel.fillStyle = "white";	//propiedad caracteristica
+	pincel.fillRect(0, 0, 600, 400);	//funcion
+
+	pincel.fillStyle = "lightblue";	//propiedad caracteristica
+	pincel.fillRect(0, 0, 600, 133);	//funcion
+
+	pincel.fillStyle = "lightblue";	//propiedad caracteristica
+	pincel.fillRect(0, 266, 600, 400);	//funcion
+
+	pincel.fillStyle = "yellow";	//propiedad caracteristica
+	pincel.beginPath();
+	pincel.moveTo(300, 100);
+	pincel.lineTo(250, 200);
+	pincel.lineTo(350, 200);
+	pincel.fill();
+
+	pincel.fillStyle = "yellow";	//propiedad caracteristica
+	pincel.beginPath();
+	pincel.moveTo(300, 300);
+	pincel.lineTo(250, 200);
+	pincel.lineTo(350, 200);
+	pincel.fill();
+
+	pincel.fillStyle = "yellow";	//propiedad caracteristica
+	pincel.beginPath();
+	pincel.moveTo(200, 200);
+	pincel.lineTo(300, 150);
+	pincel.lineTo(300, 250);
+	pincel.fill();
+
+	pincel.fillStyle = "yellow";	//propiedad caracteristica
+	pincel.beginPath();
+	pincel.moveTo(400, 200);
+	pincel.lineTo(300, 150);
+	pincel.lineTo(300, 250);
+	pincel.fill();
+
+	pincel.fillStyle = "yellow";	//propiedad caracteristica
+	pincel.beginPath();
+	pincel.arc(300,200,50,0,2*3.14);
+	pincel.fill();
+
+</script>
