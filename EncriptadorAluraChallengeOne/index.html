@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Encriptador - Daniel</title>
+
+    <link rel="stylesheet" href="reset.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/j8hM1l6zzF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <img src="imagenes/Logo.png" class="logo" onclick="home()" alt="Logo de alura con la inicial de letra a">
+
+        <section class="div-principal">
+
+            <form action="">
+
+                <textarea class="text-input" type="text" name="input-texto" maxlength="360" id="input-texto" placeholder="Ingrese el texto aqui"></textarea>                
+
+                <div class="form-group">
+
+                    <img src="imagenes/!.png" class="img-alerta">
+
+                    <label for="input-texto">Solo letras minúsculas y sin acentos.</label>
+
+                </div>
+
+                <div class="botones-div">
+
+                    <input class="btn-encriptar" type="submit" value="Encriptar" id="btn-encriptar">
+
+                    <input class="btn-desencriptar" type="submit" value="Desencriptar" id="btn-desencriptar">
+
+                </div>
+
+            </form>
+
+        </section>
+
+        <section class="message-box">
+
+            <div id="div-desaparece" class="message-box-div">
+
+              <img src="imagenes/Muñeco.svg" class="imagen-cambia"> 
+
+              <h2>Ningún mensaje fue encontrado</h2>
+
+              <h3>Ingresa el texto que desees encriptar o desencriptar.</h3>
+
+            </div>
+
+            <div id="div-aparece">
+
+              <textarea class="div-mensaje" type="text" id="mensaje" placeholder="Ningún mensaje"></textarea>
+
+              <input class="btn-copiar" type="submit" value="Copiar" id="btn-copiar">
+
+            </div>
+
+        </section>
+          
+    </main>
+
+    <script src="script.js"></script>
+
+    <footer>
+        
+        <p class="copyright">&copy Copyright Alura - 2022</p>
+    
+    </footer>
+
+</body>
+
+</html>
